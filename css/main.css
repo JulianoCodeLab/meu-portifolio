@@ -417,6 +417,9 @@ figure {
     visibility: hidden
 }
 
+.icon{
+    margin: 10px;
+}
 pre {
     display: block;
     padding: 9.5px;
@@ -432,6 +435,7 @@ pre {
 
 .btn-primary,
 .btn-secondary,
+.btn-secondary2,
 button,
 input[type=button],
 input[type=submit],
@@ -482,7 +486,7 @@ input[type=submit]:focus {
 }
 
 .btn-secondary {
-    border-color: #d5d5d5;
+    border-color: #25D366;
     color: #fff;
     background-color: #333;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .78)
@@ -490,10 +494,25 @@ input[type=submit]:focus {
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    color: #333;
-    border-color: #d5d5d5;
-    background-color: #d5d5d5
+    color: #d5d5d5;
+    border-color: #25D366;
+    background-color: #25D366
 }
+
+.btn-secondary2 {
+    border-color: #d14836;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .78)
+}
+
+.btn-secondary2:hover,
+.btn-secondary2:focus {
+    color: #d5d5d5;
+    border-color: #d14836;
+    background-color: #d14836
+}
+
 
 .mfp-container button {
     box-shadow: none
