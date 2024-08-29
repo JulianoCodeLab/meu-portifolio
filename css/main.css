@@ -29,6 +29,8 @@ body {
     overflow-x: hidden
 }
 
+
+
 .lm-animated-bg {
     position: absolute;
     width: auto;
@@ -5653,4 +5655,13 @@ a.post-thumbnail:hover {
         margin-right: -70px;
         z-index: 1
     }
+
+    
+ 
+}
+
+
+
+.box{
+    width: 100%;
 }
