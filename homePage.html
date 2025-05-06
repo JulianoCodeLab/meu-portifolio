@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo da Memória - Portfólio</title>
+  <link rel="stylesheet" href="./css/homePage.css"/>  
+
+  
+</head>
+
+<body>
+
+  <!-- Botões Globais (fixos em todas as telas) -->
+  <div class="global-controls">
+    <button id="global-theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+      <svg class="lamp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <path d="M32 2C20 2 12 10 12 22c0 7 5 13 5 13v5a3 3 0 003 3h14a3 3 0 003-3v-5s5-6 5-13c0-12-8-20-20-20zm0 46a4 4 0 110 8 4 4 0 010-8z"/>
+      </svg>
+    </button>
+
+    <button id="global-music-toggle" aria-label="Alternar música" title="Alternar música">
+      <svg class="music-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+      </svg>
+    </button>
+  </div>
+  
+  <h1>Jogo da Memória</h1>
+
+  <!-- Informação do portfólio -->
+  <div id="info" aria-live="polite" role="region" aria-atomic="true"></div>
+
+  <!-- Botão tema -->
+  <button id="theme-toggle" aria-label="Alternar tema" title="Alternar tema" tabindex="0">
+    <svg class="lamp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <path
+        d="M32 2C20 2 12 10 12 22c0 7 5 13 5 13v5a3 3 0 003 3h14a3 3 0 003-3v-5s5-6 5-13c0-12-8-20-20-20zm0 46a4 4 0 110 8 4 4 0 010-8z" />
+    </svg>
+  </button>
+
+  <button id="music-toggle" aria-label="Alternar música" title="Alternar música" tabindex="0">
+    <svg class="music-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+    </svg>
+  </button>
+  
+  <audio id="background-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Tabuleiro -->
+  <div class="game-board" id="gameBoard" aria-label="Tabuleiro do jogo da memória"></div>
+
+  <div class="portfolio-link">
+    <p><a href="index.html" aria-label="Voltar para o portfólio">⬅ Voltar para o Portfólio</a></p>
+  </div>
+
+  <!-- Modal estatísticas -->
+  <div id="stats-modal" role="dialog" aria-modal="true" aria-labelledby="stats-title" tabindex="-1">
+    <div id="stats-content">
+      <h2 id="stats-title">Parabéns!</h2>
+      <h4 id ="stats-title" >Para demonstrar minha capacidade analitica eu analisei seu desempenho durante o jogo</h4>
+      <p id="stats-attempts"></p>
+      <p id="stats-matches"></p>
+      <p id="stats-accuracy"></p>
+
+      
+      <a href="index.html" aria-label="Acessar portfólio">Acessar Portfólio</a>
+    </div>
+  </div>
+
+  <!-- Tela de Carregamento Inicial -->
+<div id="loader" class="fullscreen-overlay active">
+    <div class="spinner"></div>
+    <p class="loading-text">Carregando Portfólio Interativo...</p>
+  </div>
+  
+  <!-- Tela de Escolha -->
+  <div id="welcome-screen" class="fullscreen-overlay">
+    <div class="welcome-content">
+      <h2>Bem-vindo ao Meu Portfólio</h2>
+      <p class="subtitle">Como gostaria de me conhecer?</p>
+      
+      <div class="options-container">
+        <button id="play-game-btn" class="option-btn">
+          🎮 Modo demonstrativo 🎮
+          <span class="btn-description">Descubra minhas habilidades de forma interativa</span>
+        </button>
+        
+        <button id="direct-portfolio-btn" class="option-btn">
+          📚 Ver Portfólio 📚
+          <span class="btn-description">Minha tragetória profissional de forma detalhada</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="js/homePage.js"></script>
+</body>
+
+</html>
